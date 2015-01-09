@@ -1,0 +1,7 @@
+2013/08/24 13:33:42 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM insr_request_management where  (caller_id = 1 OR owner_id = 1) AND status = 'UNREAD' AND caller_id != requested_by.
+in F:\Web\yiifeat\iAnsar\protected\components\Controller.php (175)
+in F:\Web\yiifeat\iAnsar\protected\components\Controller.php (151)
+in F:\Web\yiifeat\iAnsar\index.php (13)
+2013/08/24 13:33:42 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM insr_request_management where  (caller_id = 1 OR owner_id = 1) AND status = 'UNREAD' AND caller_id != requested_by.
+in F:\Web\yiifeat\iAnsar\protected\components\Controller.php (175)
+in F:\Web\yiifeat\iAnsar\protected\components\Controller.php (151)
