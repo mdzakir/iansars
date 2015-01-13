@@ -58,6 +58,11 @@ class Controller extends CController
 	public static $MSG_TYPE_ASSIGNMENT_UNRESPONDED_NOTIFY_ADMIN = "ASSIGNMENT_UNRESPONDED_NOTIFY_ADMIN";
 
 	/**
+	*	Subject for personal information mail
+	*/
+	public static $SUBJECT_FOR_PERSONAL_INFORMATION_MAIL = "iAnsar: Personal information of Madhoo";
+
+	/**
 	 * Grouping message types
 	**/
 	public static $MSG_GRP_NOTIFICATION = array();

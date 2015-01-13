@@ -10,7 +10,7 @@
 }
 
 .profileForm{
-	width:710px;
+	width:100%;
 }
 
 .profileForm .fields, .fields{
@@ -32,6 +32,10 @@
 
 .profileForm .textFieldMedium, .textFieldMedium{width: 220px;}
 .profileForm .textFieldDate, .textFieldDate{width:90px;}
+
+.profile_submit .grayButtons {
+	padding: 10px 20px;
+}
 
 .selectDD,
 .profileForm .selectDD,

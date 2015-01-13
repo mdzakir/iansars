@@ -416,8 +416,8 @@ div.form .changePasswordTable label, .changePasswordTable label{
 
 /* Add delete Icons - Edit profile */
 
-.social-network input[type="button"],
-.messenger input[type="button"],
+.social-network button,
+.messenger button,
 .languages input[type="button"]{
 	width:24px;
 	height:24px;

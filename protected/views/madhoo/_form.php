@@ -23,6 +23,116 @@
 	</div>
 
 	<div class="profileForm">
+
+		<div class="pfPersonalInformation">
+			<fieldset>
+				<legend>Personal Information</legend>
+					<div class="hint"><span class="required">*</span> Information contained in this section will be sent to your mail</div>
+					<table>
+						<tr>
+							<td><?php echo $form->labelEx($model,'first_name', array("name"=>"PersonalInfo[first_name]", "for"=>"PersonalInfo_first_name")); ?></td>
+							<td><?php echo $form->labelEx($model,'last_name', array("name"=>"PersonalInfo[last_name]", "for"=>"PersonalInfo_last_name")); ?></td>
+						</tr>
+						<tr>
+							<td>
+								<?php echo CHtml::activeTextField($model, 'first_name', array("name"=>"PersonalInfo[first_name]",'size'=>60,'maxlength'=>255, 'class'=>'fields textFieldMedium')); ?>
+								<?php echo $form->error($model,'first_name'); ?>
+							</td>
+							<td>
+								<?php echo CHtml::activeTextField($model,'last_name',array("name"=>"PersonalInfo[last_name]", 'size'=>60,'maxlength'=>255, 'class'=>'fields textFieldMedium')); ?> 
+								<?php echo $form->error($model,'last_name'); ?>
+							</td>
+						</tr>
+						<tr>
+							<td><?php echo $form->labelEx($model,'family_name',array("name"=>"PersonalInfo[family_name]", "for"=>"PersonalInfo_family_name")); ?></td>
+							<td><?php echo $form->labelEx($model,'nick_name',array("name"=>"PersonalInfo[nick_name]", "for"=>"PersonalInfo_nick_name")); ?></td>
+						</tr>
+						<tr>
+							<td>
+								<?php echo CHtml::activeTextField($model,'family_name',array("name"=>"PersonalInfo[family_name]", 'size'=>60,'maxlength'=>255, 'class'=>'fields textFieldMedium')); ?> 
+								<?php echo $form->error($model,'family_name'); ?>
+							</td>
+							<td>
+								<?php echo CHtml::activeTextField($model,'nick_name',array("name"=>"PersonalInfo[nick_name]", 'size'=>60,'maxlength'=>255, 'class'=>'fields textFieldMedium')); ?> 
+								<?php echo $form->error($model,'nick_name'); ?>
+							</td>
+						</tr>
+						<tr>
+							<td><?php echo $form->labelEx($model,'profession',array("name"=>"PersonalInfo[profession]", "for"=>"PersonalInfo_profession")); ?></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<?php echo CHtml::activeTextField($model,'profession',array("name"=>"PersonalInfo[profession]", 'size'=>60,'maxlength'=>255, 'class'=>'fields textFieldMedium')); ?> 
+								<?php echo $form->error($model,'profession'); ?>
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><?php echo $form->labelEx($model,'house_no',array("name"=>"PersonalInfo[house_no]", "for"=>"PersonalInfo_house_no")); ?></td>
+							<td><?php echo $form->labelEx($model,'street',array("name"=>"PersonalInfo[street]", "for"=>"PersonalInfo_street")); ?></td>
+						</tr>
+						<tr>
+							<td>
+								<?php echo CHtml::activeTextField($model,'house_no',array("name"=>"PersonalInfo[house_no]", 'size'=>60,'maxlength'=>255, 'class'=>'fields textFieldMedium')); ?> 
+								<?php echo $form->error($model,'house_no'); ?>
+							</td>
+							<td>
+								<?php echo CHtml::activeTextField($model,'street',array("name"=>"PersonalInfo[street]", 'size'=>60,'maxlength'=>255, 'class'=>'fields textFieldMedium')); ?> 
+								<?php echo $form->error($model,'street'); ?>
+							</td>
+						</tr>
+						<tr>
+							<td><?php echo $form->labelEx($model,'email_id',array("name"=>"PersonalInfo[email_id]", "for"=>"PersonalInfo_email_id")); ?></td>
+							<td><?php echo $form->labelEx($model,'phone_number',array("name"=>"PersonalInfo[phone_number]", "for"=>"PersonalInfo_phone_number")); ?></td>
+						</tr>
+						<tr>
+							<td>
+								<?php echo CHtml::activeTextField($model,'email_id',array("name"=>"PersonalInfo[email_id]", 'size'=>60,'maxlength'=>255, 'class'=>'fields textFieldMedium')); ?> 
+								<?php echo $form->error($model,'email_id'); ?>
+							</td>
+							<td>
+								<?php echo CHtml::activeTextField($model,'phone_number',array("name"=>"PersonalInfo[phone_number]", 'size'=>60,'maxlength'=>255, 'class'=>'fields textFieldMedium')); ?> 
+								<?php echo $form->error($model,'phone_number'); ?>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Social Network Ids</label>
+							</td>
+							<td>
+								<label>Messenger Ids</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="social-network">
+									<select name="PersonalInfo[social_network_ids][][social_network_id]" class="fields">
+										<option value="Facebook">Facebook</option>
+										<option value="Twitter">Twitter</option>
+										<option value="Google Plus">Google +</option>
+									</select>
+									<input name="PersonalInfo[social_network_ids][][social_network_value]" type="text" class="fields" />
+									<button type="button" class="addsn" onclick="addRow(this)">+</button>
+									<button type="button" class="dltsn" onclick="dltRow(this)">X</button>
+								</div>
+							</td>
+							<td>
+								<div class="messenger">
+									<select name="PersonalInfo[messenger_ids][][messenger_id]" class="fields">
+										<option value="Skype">Skype</option>
+										<option value="Hotmail Messenger">Hotmail Messenger</option>
+										<option value="Yahoo Messenger">Yahoo Messenger</option>
+									</select>
+									<input name="PersonalInfo[messenger_ids][][messenger_value]" type="text" class="fields" />
+									<button type="button" class="addsn" onclick="addRow(this)">+</button>
+									<button type="button" class="dltsn" onclick="dltRow(this)">X</button>
+								</div>
+							</td>
+						</tr>
+					</table>
+			</fieldset>
+		</div>
 		
 		<div class="pfGenderDOB">
 			<fieldset>
@@ -189,8 +299,8 @@
 		<?php echo $form->hiddenField($model,'updated_at', array('value'=>date('Y-m-d H:i:s'))); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Submit' : 'Save Changes', array('class'=>'grayButtons')); ?>
+	<div class="row buttons tac profile_submit">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Submit' : 'Save Changes', array('class'=>'grayButtons p5')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
@@ -235,9 +345,9 @@ function dltRow(thisref) {
 	$(thisref).parent().remove();
 }
 
-$(document).ready(function(){
+$(document).ready(function() {
 	$('#Callees_gender').focus();
-	$('input[type="submit"]').click(function(e){
+	$('input[type="submit"]').click(function(e) {
 		var validMadhooFlag = true;
 		e.preventDefault();
 		$('.reqd').each(function(){
