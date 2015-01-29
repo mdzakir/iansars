@@ -27,26 +27,26 @@
 		<tr>
 			<td>Phone Number:</td><td><?php echo $personalInfo["phone_number"] ?></td>
 		</tr>
-		<?php if($personalInfo["social_network_ids"] && is_array($personalInfo["social_network_ids"]) && $personalInfo["social_network_ids"][0]["social_network_value"]) { ?>
+		<?php if($personalInfo["social_network_ids_id"] && is_array($personalInfo["social_network_ids_id"]) && $personalInfo["social_network_ids_value"] && is_array($personalInfo["social_network_ids_value"]) { ?>
 		<tr>
 			<td>Socail Network Ids:</td><td></td>
 		</tr>
-		<?php foreach ($personalInfo["social_network_ids"] as $key => $value) { ?>
+		<?php foreach ($personalInfo["social_network_ids_id"] as $key => $value) { ?>
 		<tr>
-			<td><?php echo $personalInfo["social_network_ids"][$key]["social_network_id"]; ?></td>
-			<td><?php echo $personalInfo["social_network_ids"][$key]["social_network_value"]; ?></td>
+			<td><?php echo $personalInfo["social_network_ids_id"][$key]; ?></td>
+			<td><?php echo $personalInfo["social_network_ids_value"][$key]; ?></td>
 		</tr>
 		<?php }
 		}
 		?>
-		<?php if($personalInfo["messenger_ids"] && is_array($personalInfo["messenger_ids"]) && $personalInfo["messenger_ids"][0]["messenger_value"]) { ?>
+		<?php if($personalInfo["messenger_ids_id"] && is_array($personalInfo["messenger_ids_id"]) && $personalInfo["messenger_ids_value"] && is_array($personalInfo["messenger_ids_value"])) { ?>
 		<tr>
 			<td>Messenger Ids:</td><td></td>
 		</tr>
-		<?php foreach ($personalInfo["messenger_ids"] as $key => $value) { ?>
+		<?php foreach ($personalInfo["messenger_ids_id"] as $key => $value) { ?>
 		<tr>
-			<td><?php echo $personalInfo["messenger_ids"][$key]["messenger_id"]; ?></td>
-			<td><?php echo $personalInfo["messenger_ids"][$key]["messenger_value"]; ?></td>
+			<td><?php echo $personalInfo["messenger_ids_id"][$key]; ?></td>
+			<td><?php echo $personalInfo["messenger_ids_value"][$key]; ?></td>
 		</tr>
 		<?php }
 		}

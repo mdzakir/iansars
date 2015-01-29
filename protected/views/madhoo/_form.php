@@ -107,24 +107,24 @@
 						<tr>
 							<td>
 								<div class="social-network">
-									<select name="PersonalInfo[social_network_ids][][social_network_id]" class="fields">
+									<select name="PersonalInfo[social_network_ids_id][]" class="fields">
 										<option value="Facebook">Facebook</option>
 										<option value="Twitter">Twitter</option>
 										<option value="Google Plus">Google +</option>
 									</select>
-									<input name="PersonalInfo[social_network_ids][][social_network_value]" type="text" class="fields" />
+									<input name="PersonalInfo[social_network_ids_value][]" type="text" class="fields" />
 									<button type="button" class="addsn" onclick="addRow(this)">+</button>
 									<button type="button" class="dltsn" onclick="dltRow(this)">X</button>
 								</div>
 							</td>
 							<td>
 								<div class="messenger">
-									<select name="PersonalInfo[messenger_ids][][messenger_id]" class="fields">
+									<select name="PersonalInfo[messenger_ids_id][]" class="fields">
 										<option value="Skype">Skype</option>
 										<option value="Hotmail Messenger">Hotmail Messenger</option>
 										<option value="Yahoo Messenger">Yahoo Messenger</option>
 									</select>
-									<input name="PersonalInfo[messenger_ids][][messenger_value]" type="text" class="fields" />
+									<input name="PersonalInfo[messenger_ids_value][]" type="text" class="fields" />
 									<button type="button" class="addsn" onclick="addRow(this)">+</button>
 									<button type="button" class="dltsn" onclick="dltRow(this)">X</button>
 								</div>
