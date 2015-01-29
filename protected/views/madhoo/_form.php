@@ -167,7 +167,7 @@
 					<table>
 						<tr>
 							<td><?php echo $form->labelEx($model,'area'); ?></td>
-							<td><?php echo $form->labelEx($model,'city'); ?><span class="required">*</span></td>
+							<td><?php echo $form->labelEx($model,'city'); ?></td>
 						</tr>
 						<tr>
 							<td>
@@ -181,7 +181,7 @@
 						</tr>
 						<tr>
 							<td><?php echo $form->labelEx($model,'state'); ?></td>
-							<td><?php echo $form->labelEx($model,'country'); ?><span class="required">*</span></td>
+							<td><?php echo $form->labelEx($model,'country'); ?></td>
 						</tr>
 						<tr>
 							<td>
@@ -359,7 +359,7 @@ $(document).ready(function() {
 				$(this).removeClass('errorClass');
 			}
 		});
-		if(validMadhooFlag) {
+		/*if(validMadhooFlag) {
 			//email or phone or city and country is mandatory
 			if(!$(".city").val().trim() || !$(".country").val().trim()) {
 				validMadhooFlag = false;
@@ -367,7 +367,7 @@ $(document).ready(function() {
 			} else {
 				$(this).removeClass('errorClass');
 			}
-		}
+		}*/
 		if($('.errorClass').length > 0) {
 			$('html, body').animate({scrollTop: $(".errorClass").offset().top - 35}, 'slow');
 		}
