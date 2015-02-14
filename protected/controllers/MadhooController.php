@@ -302,7 +302,7 @@ class MadhooController extends Controller
 			'receiver_id' => $to,
 			'type' => Controller::$MSG_TYPE_CONVERSATION,
 			'title' => "Conversation happened on one of your madhoos",
-			'description' => 'A conversation is added in the profile of madhoo ##{"madhoo":".$madhooId."}##. <br />Click on [[{"href":"/madhoo/viewmadhoo/'.$madhooId.'","value":"this link"}]] to see the conversation.',
+			'description' => 'A conversation is added in the profile of madhoo ##{"madhoo":"'.$madhooId.'"}##. <br />Click on [[{"href":"/madhoo/viewmadhoo/'.$madhooId.'","value":"this link"}]] to see the conversation.',
 			'created_at' => new CDbExpression('NOW()'),
 			'updated_at' => new CDbExpression('NOW()')
 		);
