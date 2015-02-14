@@ -27,7 +27,7 @@
 		<tr>
 			<td>Phone Number:</td><td><?php echo $personalInfo["phone_number"] ?></td>
 		</tr>
-		<?php if($personalInfo["social_network_ids_id"] && is_array($personalInfo["social_network_ids_id"]) && $personalInfo["social_network_ids_value"] && is_array($personalInfo["social_network_ids_value"]) { ?>
+		<?php if($personalInfo["social_network_ids_id"] && is_array($personalInfo["social_network_ids_id"]) && $personalInfo["social_network_ids_value"] && is_array($personalInfo["social_network_ids_value"])) { ?>
 		<tr>
 			<td>Socail Network Ids:</td><td></td>
 		</tr>

@@ -402,8 +402,9 @@ class MadhooController extends Controller
 	public function sendPersonalInformationDetails($personalInfo) {
 		$this->mailParams = null;
 		$this->mailParams->from = "iAnsar";
+		$this->mailParams->fromName = "iAnsar";
 		$this->mailParams->to = $this->getEmailId(YII::app()->user->id);
-		$this->mailParams->subject = $SUBJECT_FOR_PERSONAL_INFORMATION_MAIL;
+		$this->mailParams->subject = Controller::$SUBJECT_FOR_PERSONAL_INFORMATION_MAIL;
 		$this->mailParams->body = $this->renderPartial('_personal_information_mail', array('personalInfo' => $personalInfo), true);
 		$this->sendMail();
 		$this->mailParams = null;

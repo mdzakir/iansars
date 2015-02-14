@@ -7225,3 +7225,43 @@ in D:\Work\iAnsar\protected\controllers\ProfileController.php (351)
 in D:\Work\iAnsar\protected\components\Controller.php (348)
 in D:\Work\iAnsar\protected\controllers\ProfileController.php (396)
 in D:\Work\iAnsar\protected\controllers\ProfileController.php (351)
+2015/01/29 19:20:21 [info] [system.controller.sendMail] Mail sent to mdzakir.com@gmail.com
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (353)
+in D:\Work\iAnsars\iansars\protected\controllers\MadhooController.php (409)
+in D:\Work\iAnsars\iansars\protected\controllers\MadhooController.php (390)
+2015/02/11 18:17:20 [info] [system.controller.sendMail] Mail sent to mdzakir.com@gmail.com
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (353)
+in D:\Work\iAnsars\iansars\protected\controllers\MadhooController.php (643)
+in D:\Work\iAnsars\iansars\index.php (13)
+2015/02/11 18:18:52 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT t.first_name, t.last_name FROM `insr_callees` `t` WHERE t.id = .$madhooId. LIMIT 1.
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (245)
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (395)
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (421)
+2015/02/11 18:19:05 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT t.first_name, t.last_name FROM `insr_callees` `t` WHERE t.id = .$madhooId. LIMIT 1.
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (245)
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (395)
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (421)
+2015/02/11 18:26:16 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT t.first_name, t.last_name FROM `insr_callees` `t` WHERE t.id = .$madhooId. LIMIT 1.
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (245)
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (395)
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (421)
+2015/02/11 18:29:03 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT t.first_name, t.last_name FROM `insr_callees` `t` WHERE t.id = .$madhooId. LIMIT 1.
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (245)
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (395)
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (421)
+2015/02/11 18:29:12 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT t.first_name, t.last_name FROM `insr_callees` `t` WHERE t.id = .$madhooId. LIMIT 1.
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (245)
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (395)
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (421)
+2015/02/11 18:30:08 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT t.first_name, t.last_name FROM `insr_callees` `t` WHERE t.id = .$madhooId. LIMIT 1.
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (245)
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (395)
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (421)
+2015/02/11 18:35:00 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT t.first_name, t.last_name FROM `insr_callees` `t` WHERE t.id = .$madhooId. LIMIT 1.
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (245)
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (395)
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (421)
+2015/02/14 17:57:49 [info] [system.controller.sendMail] Mail sent to ayeshazakir.com@gmail.com
+in D:\Work\iAnsars\iansars\protected\components\Controller.php (353)
+in D:\Work\iAnsars\iansars\protected\controllers\ProfileController.php (396)
+in D:\Work\iAnsars\iansars\protected\controllers\ProfileController.php (351)
