@@ -302,7 +302,7 @@ class MadhooController extends Controller
 			'receiver_id' => $to,
 			'type' => Controller::$MSG_TYPE_CONVERSATION,
 			'title' => "Conversation happened on one of your madhoos",
-			'description' => 'A conversation is added in the profile of madhoo ##{"madhoo":".$madhooId."}##. <br />Click on [[{"href":"/madhoo/viewmadhoo/'.$madhooId.'","value":"this link"}]] to see the conversation.',
+			'description' => 'A conversation is added in the profile of madhoo ##{"madhoo":"'.$madhooId.'"}##. <br />Click on [[{"href":"/madhoo/viewmadhoo/'.$madhooId.'","value":"this link"}]] to see the conversation.',
 			'created_at' => new CDbExpression('NOW()'),
 			'updated_at' => new CDbExpression('NOW()')
 		);
@@ -400,10 +400,10 @@ class MadhooController extends Controller
 	*	
 	*/
 	public function sendPersonalInformationDetails($personalInfo) {
-		$this->mailParams = null;
-		$this->mailParams->from = "iAnsar";
+		$this->mailParams = new StdClass();
 		$this->mailParams->fromName = "iAnsar";
-		$this->mailParams->to = $this->getEmailId(YII::app()->user->id);
+		/*$this->mailParams->to = $this->getEmailId(YII::app()->user->id);*/
+		$this->mailParams->to = array($this->getEmailId(YII::app()->user->id));
 		$this->mailParams->subject = Controller::$SUBJECT_FOR_PERSONAL_INFORMATION_MAIL;
 		$this->mailParams->body = $this->renderPartial('_personal_information_mail', array('personalInfo' => $personalInfo), true);
 		$this->sendMail();
