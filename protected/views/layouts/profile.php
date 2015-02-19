@@ -61,6 +61,8 @@
 				//array('label'=>'Home', 'url'=>array('/site/index')),
 				array('label'=>'Register', 'url'=>array('/site/register'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Home', 'url'=>array('/profile/dashboard'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Daees', 'url'=>array('/daee/daees'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Madhoos', 'url'=>array('/madhoo/madhoos'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Inbox', 'url'=>array('/profile/mymessages'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Invite', 'url'=>array('/profile/invite'), 'visible'=>!Yii::app()->user->isGuest && Yii::app()->user->can_invite),
 			),
@@ -77,8 +79,8 @@
 	<?php endif?>
 		<?php echo $content; ?>
 	<div class="clear"></div>
-	<a href="/madhoo/madhoos" id="madhoolist-qlink" title="Madhoos List" class="floating_qlinks">Madhoos</a>
-	<a href="/daee/daees" id="daeelist-qlink" title="Da'ees List List" class="floating_qlinks">Daees</a>
+<!-- 	<a href="/madhoo/madhoos" id="madhoolist-qlink" title="Madhoos List" class="floating_qlinks">Madhoos</a>
+	<a href="/daee/daees" id="daeelist-qlink" title="Da'ees List List" class="floating_qlinks">Daees</a> -->
 	<div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by iAnsars.<br/>
 		All Rights Reserved.<br/>

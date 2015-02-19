@@ -67,7 +67,7 @@
 						</tr>
 						<tr>
 							<td>
-								<?php echo $form->dropDownList($model,'gender', array('MALE'=>'Male', 'FEMALE'=>'Female', 'OTHER'=>'Other'), array('empty'=>'Select', 'class'=>'reqd selectDD selectSmall')) ?> 
+								<?php echo $form->dropDownList($model,'gender', array('MALE'=>'Male', 'FEMALE'=>'Female', 'OTHER'=>'Other'), array('empty'=>'Select', 'class'=>'reqd fields')) ?> 
 								<?php echo $form->error($model,'gender'); ?>
 							</td>
 							<td>
@@ -127,7 +127,7 @@
 															'empty'=>'- Social Network -',
 															'options'=>array($name=>array('selected'=>'selected')), 
 															'id'=>'',
-															'class' => 'reqdsn selectDD selectMedium'));
+															'class' => 'reqdsn fields'));
 													?>
 												<?php // echo $form->textField($model,'social_network_name[]',array('id'=>'', 'class'=>'reqdsn fields textFieldMedium', 'value'=>$name)); ?>
 												<?php echo $form->textField($model,'social_network_id[]',array('id'=>'', 'class'=>'reqdsn fields textFieldMedium', 'value'=>$value)); ?>
@@ -160,7 +160,7 @@
 															'empty'=>'- Social Network -',
 															//'options'=>array($name=>array('selected'=>'selected')),
 															'id'=>'',
-															'class' => 'reqdsn selectDD selectMedium'));
+															'class' => 'reqdsn fields'));
 												?>
 														
 										<?php echo $form->textField($model,'social_network_id[]',array('id'=>'', 'class'=>'reqdsn fields textFieldMedium')); ?>
@@ -194,7 +194,7 @@
 															'empty'=>'- Messenger ID -',
 															'options'=>array($name=>array('selected'=>'selected')),
 															'id'=>'',
-															'class' => 'reqdmn selectDD selectMedium'));
+															'class' => 'reqdmn fields'));
 												?>
 											
 												<?php echo $form->textField($model,'messenger_id[]',array('id'=>'', 'class'=>'reqdmn fields textFieldMedium', 'value'=>$value)); ?>
@@ -224,7 +224,7 @@
 													'empty'=>'- Messenger ID -',
 													//'options'=>array($name=>array('selected'=>'selected')),
 													'id'=>'',
-													'class' => 'reqdmn selectDD selectMedium'));
+													'class' => 'reqdmn fields'));
 										?>
 										<?php echo $form->textField($model,'messenger_id[]',array('id'=>'', 'class'=>'reqdmn fields textFieldMedium')); ?>
 										<input type="button" value="+" onClick="addRow(this);" class="addsn">

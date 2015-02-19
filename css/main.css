@@ -65,7 +65,7 @@ body{
 #mainmenu ul li a{
 	color:#fff;
 	background-color:transparent;
-	font-size:12px;
+	font-size:13px;
 	font-weight:bold;
 	text-decoration:none;
 	padding:10px 10px 9px 10px;
@@ -428,11 +428,17 @@ div.form .changePasswordTable label, .changePasswordTable label{
 }
 
 .social-network .addsn, .messenger .addsn, .languages .addsn{
-	background:url(../images/sprite1.png) no-repeat scroll 0 0 transparent;
+	background: url(../images/sprite1.png) no-repeat scroll 0 0 transparent;
+	border: 0;
+	padding: 5px 11px;
+	text-indent: -9999px;
 }
 
 .social-network .dltsn, .messenger .dltsn, .languages .dltsn{
 	background:url(../images/sprite1.png) no-repeat scroll -24px 0 transparent;
+	border: 0;
+	padding: 5px 11px;
+	text-indent: -9999px;
 }
 
 /* fullWidthLayout */

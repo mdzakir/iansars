@@ -380,14 +380,14 @@ class MadhooController extends Controller
 				CallersProfile::model()->updateByPk($callersProfile["id"], array('callee_created'=>$json, 'updated_at'=>new CDbExpression('NOW()')));
 				$act_message = "Daee ".$this->getDaeeLink(YII::app()->user->id)." has added a Madhoo ".$this->getMadhooLink($model->id);
 				Activities::model()->addActivity($act_message);
+				if(isset($_POST["PersonalInfo"])) {
+					$this->sendPersonalInformationDetails($model->id, $_POST['PersonalInfo'], $_POST['Callees']);
+				}
 				$this->redirect(array('/madhoo/viewmadhoo/','id'=>$model->id));
+				
 			}else{
 				//print($model->getErrors());
 			}
-		}
-
-		if(isset($_POST["PersonalInfo"])) {
-			$this->sendPersonalInformationDetails($_POST["PersonalInfo"]);
 		}
 
 		$this->render('addmadhoo',array(
@@ -399,13 +399,13 @@ class MadhooController extends Controller
 	*	Mailing personal details of madhoo to super admin and daee
 	*	
 	*/
-	public function sendPersonalInformationDetails($personalInfo) {
+	public function sendPersonalInformationDetails($id, $personalInfo, $callees){
 		$this->mailParams = new StdClass();
 		$this->mailParams->fromName = "iAnsar";
 		/*$this->mailParams->to = $this->getEmailId(YII::app()->user->id);*/
 		$this->mailParams->to = array($this->getEmailId(YII::app()->user->id));
 		$this->mailParams->subject = Controller::$SUBJECT_FOR_PERSONAL_INFORMATION_MAIL;
-		$this->mailParams->body = $this->renderPartial('_personal_information_mail', array('personalInfo' => $personalInfo), true);
+		$this->mailParams->body = $this->renderPartial('_personal_information_mail', array('id'=> $id, 'personalInfo' => $personalInfo, "callees"=>$callees), true);
 		$this->sendMail();
 		$this->mailParams = null;
 	}

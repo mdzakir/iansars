@@ -7,7 +7,7 @@
 <div id="madhoo-unassign-error-flash" style="display:none" class="flash-error">Error in unassigning the Madhoo. Try later.</div>
 <div class="madhooDetailPage">
 
-	<h1><strong>Madhoo: <?php echo $model->id. ', ' .$model->city; ?></strong></h1>
+	<h1><strong><?php echo '<span style="color:#999;">Madhoo ID: </span>'.$model->id;?>, <?php if($model->area) echo '<span style="color:#999;">Area: </span>'.$model->area; ?>, <?php echo '<span style="color:#999;">City: </span>'.$model->city; ?></strong></h1>
 
 	<div class="dashBoard">
 		<div class="dashBoardName leftDB">

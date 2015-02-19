@@ -144,7 +144,7 @@
 						</tr>
 						<tr>
 							<td>
-								<?php echo $form->dropDownList($model,'gender', array('MALE'=>'Male', 'FEMALE'=>'Female', 'OTHER'=>'Other'), array('empty'=>'Select', 'class'=>'reqd selectDD selectSmall')) ?> 
+								<?php echo $form->dropDownList($model,'gender', array('MALE'=>'Male', 'FEMALE'=>'Female', 'OTHER'=>'Other'), array('empty'=>'Select', 'class'=>'reqd fields')) ?> 
 								<?php echo $form->error($model,'gender'); ?>
 							</td>
 							<td>
@@ -153,7 +153,7 @@
 										$ageArr[$i] = $i;
 									}
 								?>
-								<?php echo $form->dropDownList($model,'age', $ageArr, array('empty'=>'Select', 'class'=>'reqd selectDD selectSmall')) ?>
+								<?php echo $form->dropDownList($model,'age', $ageArr, array('empty'=>'Select', 'class'=>'reqd fields')) ?>
 								<?php echo $form->error($model,'age'); ?>
 							</td>
 						</tr>
@@ -262,7 +262,7 @@
 						</tr>
 						<tr>
 							<td colspan="2">
-								<?php echo $form->dropDownList($model,'status', array('PARTIALLY_CONVINCED'=>'Partially Convinced','ACCEPTED'=>'Accepted', 'CONVINCED'=>'Convinced', 'NO_INTERACTION_YET'=>'No interaction yet', 'DISAGREED'=>'Disagreed'), array('empty'=>'Select', 'class'=>'reqd selectDD selectMedium')) ?>
+								<?php echo $form->dropDownList($model,'status', array('PARTIALLY_CONVINCED'=>'Partially Convinced','ACCEPTED'=>'Accepted', 'CONVINCED'=>'Convinced', 'NO_INTERACTION_YET'=>'No interaction yet', 'DISAGREED'=>'Disagreed'), array('empty'=>'Select', 'class'=>'reqd fields')) ?>
 								<?php echo $form->error($model,'status'); ?>
 							</td>
 						</tr>
@@ -300,7 +300,7 @@
 	</div>
 
 	<div class="row buttons tac profile_submit">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Submit' : 'Save Changes', array('class'=>'grayButtons p5')); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Submit' : 'Save Changes', array('class'=>'btn-new p5')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
@@ -346,7 +346,7 @@ function dltRow(thisref) {
 }
 
 $(document).ready(function() {
-	$('#Callees_gender').focus();
+	//$('#Callees_gender').focus();
 	$('input[type="submit"]').click(function(e) {
 		var validMadhooFlag = true;
 		e.preventDefault();

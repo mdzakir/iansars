@@ -15,19 +15,14 @@
 
 .profileForm .fields, .fields{
 	border: 1px solid #999;
-    box-shadow: 0 0 2px #999 inset;
     color: #333333;
-    font-size: 12px;
-    padding: 6px;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -o-border-radius: 4px;
-    -khtml-border-radius: 4px;
+    font-size: 13px;
+    padding: 6px 12px;
 }
 
 .profileForm .fields:focus, .fields:focus{
-	box-shadow: 0 0 4px #777 inset;
+	box-shadow: 0 0 8px #89A6F5;
+	border: 1px solid #7A9BF5;
 }
 
 .profileForm .textFieldMedium, .textFieldMedium{width: 220px;}
@@ -41,22 +36,10 @@
 .profileForm .selectDD,
 .madhoo-conversation .selectDD{
 	border: 1px solid #999;
-    box-shadow: 0 0 2px #ccc;
     color: #333333;
-    font-size: 12px;
-    padding: 5px;
+    font-size: 13px;
     width: 220px;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -o-border-radius: 4px;
-    -khtml-border-radius: 4px;
-    cursor:pointer;
-}
-
-.selectDD:hover{
-	box-shadow: 0 0 2px #999;
-}
+ }
 
 .profileForm .selectSmall,
 .madhoo-conversation .selectSmall{width:90px;}
@@ -638,4 +621,15 @@
 	top: 3px;
 	right: 70px;
 	width: 200px;
+}
+
+.btn-new{
+	padding:6px 15px;
+	border: 1px solid #999;	
+	background: #eee;
+}
+
+.btn-new:focus{
+	box-shadow: 0 0 8px #89A6F5;
+	border: 1px solid #7A9BF5;
 }

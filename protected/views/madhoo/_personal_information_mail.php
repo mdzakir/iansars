@@ -1,5 +1,9 @@
+
 <div>
 	<table>
+		<tr>
+			<td>Madhoo ID:</td><td><a href="<?php echo Yii::app()->getBaseUrl(true) ?>/madhoo/viewmadhoo/<?php echo $id ?>" title="Click here to view madhoo"><?php echo $id ?> - Click here to view this madhoo</a></td>
+		</tr>
 		<tr>
 			<td>First Name:</td><td><?php echo $personalInfo["first_name"] ?></td>
 		</tr>
@@ -51,5 +55,47 @@
 		<?php }
 		}
 		?>
+		<tr>
+			<td>Gender : </td><td><?php echo $callees["gender"] ?></td>
+		</tr>
+		<tr>
+			<td>Age : </td><td><?php echo $callees["age"] ?></td>
+		</tr>
+		<tr>
+			<td>Area : </td><td><?php echo $callees["area"] ?></td>
+		</tr>
+		<tr>
+			<td>City : </td><td><?php echo $callees["city"] ?></td>
+		</tr>
+		<tr>
+			<td>State : </td><td><?php echo $callees["state"] ?></td>
+		</tr>
+		<tr>
+			<td>Country : </td><td><?php echo $callees["country"] ?></td>
+		</tr>
+		<tr>
+			<td>Zip : </td><td><?php echo $callees["zip"] ?></td>
+		</tr>
+		<tr>
+			<td>Highest Qualification : </td><td><?php echo $callees["highest_qualification"] ?></td>
+		</tr>
+		<tr>
+			<td>Language Read : </td><td><?php echo $callees["language_read"] ?></td>
+		</tr>
+		<tr>
+			<td>Language Write : </td><td><?php echo $callees["language_write"] ?></td>
+		</tr>
+		<tr>
+			<td>Language Speak : </td><td><?php echo $callees["language_speak"] ?></td>
+		</tr>
+		<tr>
+			<td>Status : </td><td><?php echo $callees["status"] ?></td>
+		</tr>
+		<tr>
+			<td>Religion : </td><td><?php echo $callees["religion"] ?></td>
+		</tr>
+		<tr>
+			<td>Note : </td><td><?php echo $callees["note"] ?></td>
+		</tr>
 	</table>
 </div>
